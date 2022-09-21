@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid header-1">
+        <div class="row">
+            <div class=" col-md-12 col-12 calcborder">
+                <form class="maincalc">
+                    <p id="casio" class="mb-4 ms-4">Casio</p>
+                    <input type="screen" id="screen">
+                    <div>
+                        <input type="button" class="botton" value="7" onclick="bottn(value)">
+                        <input type="button" class="botton" value="8" onclick="bottn(value)">
+                        <input type="button" class="botton" value="9" onclick="bottn(value)">
+                        <input type="button" class="botton" value="x" onclick="bottn(value)">
+                        <br>
+                        <input type="button" class="botton" value="4" onclick="bottn(value)">
+                        <input type="button" class="botton" value="5" onclick="bottn(value)">
+                        <input type="button" class="botton" value="6" onclick="bottn(value)">
+                        <input type="button" class="botton" value="/" onclick="bottn(value)">
+                        <br>
+                        <input type="button" class="botton" value="1" onclick="bottn(value)">
+                        <input type="button" class="botton" value="2" onclick="bottn(value)">
+                        <input type="button" class="botton" value="3" onclick="bottn(value)">
+                        <input type="button" class="botton" value="-" onclick="bottn(value)">
+                        <br>
+                        <input type="button" class="botton" value="." onclick="bottn(value)">
+                        <input type="button" class="botton" value="+" onclick="bottn(value)">
+                        <input type="button" class="botton" value="c" onclick="clr()">
+                        <input type="button" class="botton" value="=" onclick="equals()">
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+
+    <script>
+        function bottn(value) {
+            document.getElementById('screen').value += value
+
+
+        }
+        function equals() {
+            var result = document.getElementById('screen').value
+            finalresult = eval(result)
+            document.getElementById('screen').value = finalresult
+        }
+        function clr() {
+            document.getElementById('screen').value = ""
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

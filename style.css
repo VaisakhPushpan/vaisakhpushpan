@@ -1,0 +1,315 @@
+/*header section*/
+body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+*{
+    box-sizing: border-box;
+}
+.header-name{
+    height:5rem;
+    position: relative;
+    float: left;
+    width: fit-content;
+    background-color: black;
+    
+}
+.nav-button{
+    position: fixed;
+    top: 20px; 
+    margin-right: 300px;
+    
+}
+.navbar-div{
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    padding-bottom:20rem;
+}
+.nav-design{
+    background-color: white;
+    border-radius: 5px;
+}
+.name-hover{
+    text-shadow: 0 0 5px cyan;
+}
+.header-fix{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 10px blue;
+}
+.header-navbar{
+    background-color: black;
+}
+.nav-button:hover{
+    color: blue;
+    border-radius: 5px;
+    background-color: cyan;
+    font-size: 23px;
+    transition: all 400ms;
+    padding: 0px 4px 0px 4px;
+    animation: skillbox .1s linear  ;
+}
+.btn-hover:hover{
+    background-color: cyan;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    color: black;   
+    transition: 200ms;
+    font-size: 20px;
+}
+#checking:checked ~label i::before{
+    content: '\f00d';
+}
+
+
+
+/*sectio-1*/
+.section-1{
+    padding-top: 80px;
+    background-image: url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1144&q=80");
+    box-shadow: 0 0 10px blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: all-anim 1s linear .5s;
+    
+}
+.section1-name{
+  font-size: 5rem;
+  margin-top: 40%;
+  margin-left: 30px;
+  
+}
+.section1-namediv{
+    width: 50%;
+    height: 740px;
+    
+}
+h3{
+    margin-left: 30px;
+}
+h6{
+    margin-left: 30px;
+}
+.section1-rightsidediv{
+    display: flex;
+    align-items: center;
+}
+.section1-rightimg{
+    width: 200px;
+    margin-left: 25%;
+    margin-bottom: 30%;
+
+}
+.section1-rightsidebtn{
+    position: relative;
+    top: 115px;
+    right:150px;
+    display:flex;
+}
+.section1-rightsidebtn a{
+    text-decoration: none;
+    color: black;
+    
+}
+.section1-rightsidebtn:hover{
+    height: 45px;
+    color: black;
+    transition: all 300ms;
+    font-size: 18px;
+}
+.btnsign:hover{
+    color: black;
+}
+.animation-div1,.animation-div2,.animation-div3{
+    
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    margin-top: 30px;
+    background-color: greenyellow;
+    position: relative;
+    border-radius: 50%;
+    top: 165px;
+    right: 240px;
+    display: flex;
+    animation: animediv .5s linear .1s infinite;
+    color:greenyellow;
+    font-size: 85px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 14px;
+    padding-right: .4px;
+}
+.animation-div2{
+    animation-delay: .2s;
+}
+.animation-div3{
+    animation-delay: .3s;
+}
+@keyframes animediv{
+    0%{
+        top: 145px;
+    }
+    50%{
+        top: 150;
+    }
+    100%{
+        top: 165;
+    }
+}
+
+
+
+/*section2*/
+
+.section-2{
+    background-color: black;
+    box-shadow: 0 0 10px blue;
+
+}    
+.section2-name{
+    display: flex;
+    text-shadow: 0 0 5px white;
+    justify-content: center;
+}
+.company-logo{
+   width: 10rem; 
+   margin-left:53px;
+   border-radius: 10px;
+   margin-top: 20px;
+   
+}
+.company-logo:hover{
+    animation: skillbox .1s linear  ;
+}
+.section2-name{
+    font-size: 60px;
+}
+.cardparent{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.card-title{
+    margin-left: 30%;
+}
+.card-1{
+    background-color: black;
+}
+
+/*section-3*/
+
+
+
+.section-3{
+    background-color: black;
+    box-shadow: 0 0 10px blue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section3-name{
+    display: flex;
+    text-shadow: 0 0 5px white;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5%;
+}
+.skill-heading{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight:lighter;
+    color: white;
+    margin-bottom: 10%;
+}
+.skill-box{
+    border-bottom: 5px solid blue;
+    border-left: 1px solid blue;
+    border-right: 2.5px solid blue;
+    height: 250px;
+    
+
+    
+}
+.skill-box:hover{
+    animation: skillbox .1s linear  ;
+}
+.skill-list{
+    padding-bottom: 100px;
+}
+@keyframes skillbox{
+    0%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* section-4 */
+
+.section-4{
+    background-color: black;
+    box-shadow: 0 0 10px blue;
+    padding-bottom: 150px;
+}
+.section4-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meimg{
+    height: 300px;
+    width: auto;
+}
+.meimg:hover{
+    animation: skillbox .1s linear  ;
+}
+.section4-name{
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: lighter;
+}
+.icon-4{
+   color: white;
+   font-size: 800em;
+}
+.socialicon:hover{
+    animation: iconanim 1s linear  ;
+    
+}
+@keyframes iconanim{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/*footer*/
+
+.footersection{
+    background-color: black;
+    box-shadow: 0 0 10px blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
