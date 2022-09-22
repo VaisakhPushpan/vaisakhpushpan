@@ -135,7 +135,7 @@ h6{
     position: relative;
     border-radius: 50%;
     top: 165px;
-    right: 255px;
+    right: 250px;
     display: flex   ;
     animation: animediv .5s linear .1s infinite;
     color:greenyellow;
