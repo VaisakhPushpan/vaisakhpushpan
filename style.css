@@ -302,9 +302,9 @@ h6{
 /*footer*/
 
 .footersection{
-    display : flex;
-    flex-direction:coloumn;
-    align-items:space-between;
+    display: flex;
+    flex-direction: column  ;
+    align-items: space-between;
     background-color: black;
     box-shadow: 0 0 10px blue;
     padding-top: 100px;
