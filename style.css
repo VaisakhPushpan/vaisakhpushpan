@@ -143,6 +143,7 @@ h6{
     align-items: center;
     justify-content: center;
     padding-bottom: 14px;
+    background-color:black;
 }
 .animation-div2{
     animation-delay: .2s;
