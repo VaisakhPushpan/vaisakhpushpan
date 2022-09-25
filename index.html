@@ -24,9 +24,8 @@
           <h1 class="fw-bold ms-5 mt-3 name-hover">Vaisakh Pushpan</h1>
         </div>
         <div class="header-navbar col-3">
-          <nav class="navbar navbar-light  ">
-            <input type="checkbox" id="checking" style="display: none;">
-            <label for="checking" class="nav-button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <nav class="navbar navbar-light">
+            <label for="" class="nav-button"  onclick="vaisakh()">
               <i class="fa fa-bars nav-design fs-2" aria-hidden="true"></i>
             </label>
             </button>
@@ -37,30 +36,30 @@
     <div class="collapse navbar-collapse navbar-div " id="navbarNav">
       <ul class="navbar-nav ">
         <li class="nav-item activer">
-          <button class="btn">
-            <a class="nav-link fs-4 btn-hover text-white " href="#home"><span class="fw-bold btn-hover">H</span><span
+          <button class="btn" onclick="vimal()">
+            <a class="nav-link fs-4 btn-hover text-white"  href="#home"><span class="fw-bold btn-hover">H</span><span
                 class="btn-hover">ome</span><span class="sr-only js-scroll-trigger"></span></a>
           </button>
         </li>
         <li class="nav-item">
-          <button class="btn">
+          <button class="btn" onclick="vimal()">
             <a class="nav-link  fs-4 btn-hover text-white " href="#experience"><span
                 class="fw-bold btn-hover">E</span><span class="btn-hover">xperience</span></a>
           </button>
         </li>
         <li class="nav-item">
-          <button class="btn">
+          <button class="btn" onclick="vimal()">
             <a class="nav-link fs-4 btn-hover text-white" href="#skills"><span class="fw-bold btn-hover">S</span><span
                 class="btn-hover">kills</span></a>
           </button>
         </li>
         <li class="nav-item">
-          <button class="btn">
+          <button class="btn" onclick="vimal()">
             <a class="nav-link  fs-4 btn-hover text-white" href="#about-me"><span
                 class="fw-bold btn-hover">A</span><span class="btn-hover">bout Me</span></a>
           </button>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" onclick="vimal()">
           <button class="btn">
             <a class="nav-link  fs-4 btn-hover text-white" href="#contact-me"><span
                 class="fw-bold btn-hover">C</span><span class="btn-hover">ontact Me</span></a>
@@ -303,6 +302,15 @@ _blank">Resume<i>&#8594</i></a></button>
       <a class="text-white" href="#home">Vaisakh Pushpan</a>
     </div>
   </footer>
+
+  <script>function vimal() {
+    $("#navbarNav").hide();
+   }
+   function vaisakh(){
+    $('#navbarNav').show();
+   }</script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
