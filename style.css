@@ -250,6 +250,28 @@ h6{
     }
 }
 
+
+/*for fun*/
+
+
+.for-fun{
+    background-color: black;
+    height: 900px;
+    
+}
+.funn{
+    display: flex;
+    justify-content: space-around;
+}
+.dice{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow:  5px 5px 2px white;
+}
+
+
+
 /* section-4 */
 
 .section-4{
