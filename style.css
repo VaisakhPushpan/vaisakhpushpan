@@ -29,6 +29,12 @@ body{
     background-color: black;
     padding-bottom:20rem;
 }
+.btn{
+    margin-top: 30px;
+}
+.btn-hover{
+    letter-spacing: 3px;
+}
 .nav-design{
     background-color: white;
     border-radius: 5px;
