@@ -269,7 +269,10 @@ h6{
     border-radius: 50%;
     box-shadow:  5px 5px 2px white;
 }
-
+.dice:hover{
+    transform: scale(.8,.8);
+    opacity: .6;
+}
 
 
 /* section-4 */
