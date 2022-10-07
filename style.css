@@ -8,6 +8,10 @@ body{
 *{
     box-sizing: border-box;
 }
+#rowdiv{
+    display: flex;
+   justify-content: space-around;
+}
 .header-name{
    display: flex;
    align-items: center;
