@@ -6,7 +6,7 @@
 }
 #rowdiv{
     display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    width: 100%;
 }
 .header-name{
@@ -30,11 +30,13 @@
     background-color: black;
     padding-bottom:20rem;
 }
+.nav-button{
+    margin-right: 5rem;
+}
 .nav-design{
     background-color: white;
     border-radius: 5px;
 }
-
 .header-fix{
     position: fixed;
     width: 100%;
