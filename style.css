@@ -145,7 +145,7 @@
 }    
 .section2-name{
     display: flex;
-    text-shadow: 0 0 5px white;
+    text-shadow: 2px 2px 2px white;
     justify-content: center;
 }
 .company-logo{
@@ -185,7 +185,7 @@
 }
 .section3-name{
     display: flex;
-    text-shadow: 0 0 5px white;
+    text-shadow:2px 2px 2px white;
     justify-content: center;
     font-size: 50px;
     font-weight: 600;
