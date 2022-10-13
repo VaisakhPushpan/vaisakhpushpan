@@ -69,9 +69,9 @@
 
   <section id="home">
     <div class="container-fluid section-1">
-      <div class="row">
+      <div class="row ">
         <div class="col-12 col-md-6 section1-namediv text-center ">
-          <h1 class=" fw-light section1-name text-white text-start">Vaisakh Pushpan</h1>
+          <h1 class=" scroll fw-light section1-name text-white text-start">Vaisakh Pushpan</h1>
           <p>
           <h3 class="text-capitalize text-light text-start">electronics and communication engineer</h3>
           </p>
@@ -82,10 +82,10 @@
           </p>
         </div>
         <div class="col-12 col-md-6 section1-rightsidediv">
-          <img class="section1-rightimg rounded-circle "
+          <img class="section1-rightimg rounded-circle scroll"
             src="https://st.depositphotos.com/3079665/3910/v/450/depositphotos_39109445-stock-illustration-welcoming-businessman.jpg"
             alt="">
-          <button class="btn bg-info text-black fw-bold section1-rightsidebtn mt-4"><a class="btnsign "
+          <button class="scroll btn bg-info text-black fw-bold section1-rightsidebtn mt-4"><a class="btnsign "
               href="https://drive.google.com/file/d/1p--0eWX64PfGH24VmFxM6k0p7jvF_xli/view?usp=sharing"
               target="_blank">Resume<i>&#8594</i></a></button>
         </div>
@@ -99,7 +99,7 @@
   <section class="section-2" id="experience">
     <span class="text-white section2-name pt-5">Experience</span>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row scroll">
         <div class="col-md-4 col-12 cardparent mt-5 ">
           <div class="card card-1 text-white" style="width: 18rem; background-color: black;">
             <img class="company-logo"
@@ -204,7 +204,7 @@
       <span class="section3-name">Skills</span>
       <p class="text-white text-capitalize fs-5 text-start">every day i am trying to learn new things about web
         development.here is the list what i know now</p>
-      <div class="row pt-5">
+      <div class="row pt-5 scroll">
         <div class="col-md-4 col-12 skill-box">
           <span class="skill-heading mt-3">Languages</span>
           <ul class="text-white text-capitalize">
@@ -235,7 +235,7 @@
 <section class="for-fun" id="games">
   <span class="section3-name text-capitalize pt-5">GAMES</span>
   <div class="container-fluid fundiv pt-5">
-    <div class="row">
+    <div class="row scroll">
       <div class="col-md-6 col-12 funn"><a href="dice.html" target="_blank"><img class="dice mt-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw6lMetH-ABf_35-5YnURTI7luHGMW8ME44fkb8aEBbzZlSLaymMKkEuqc&s=10" alt=""></a></div>
       <div class="col-md-6 col-12 funn"><a href="drumkit.html"target="_blank"><img class="dice mt-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWejefIOfl8u4sQ4wtal_zqJz48YHG1Zs7Vg&usqp=CAU" alt=""></a></div>
       
@@ -248,7 +248,7 @@
   <section class="section-4" id="about-me">
     <span class="section3-name text-capitalize pt-5">about me</span>
     <div class="container-fluid">
-      <div class="row ">
+      <div class="row scroll">
         <div class="col-md-6 col-12 section4-img">
           <img class="rounded-circle mt-5 meimg"
             src="https://i.pinimg.com/736x/e3/62/f0/e362f06ca78597ea609880f402436b8f.jpg" alt="">
@@ -282,7 +282,7 @@
 
   <!--footer-->
   <footer class="footersection" id="contact-me">
-    <span class="section3-name pt-5">Contact Me</span>
+    <span class="section3-name pt-5 scroll">Contact Me</span>
     <div class="container p-4 pb-0 text-center">
       <section class="mb-4">
       </section>
@@ -320,7 +320,25 @@ a.addEventListener("click" , () =>{
 
 vimal = () =>{
     b.style.display = "none"
-}</script>
+  }
+
+
+window.addEventListener("scroll" , ()=>{
+   var reveals =  document.querySelectorAll(".scroll")
+   for(i=0 ; i<reveals.length ; i++){
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+    if(revealTop < windowHeight - revealPoint){
+        reveals[i].classList.add("active");
+    }
+    else{
+        reveals[i].classList.remove("active");
+    }
+   }
+})
+</script>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
