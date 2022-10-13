@@ -303,15 +303,6 @@
     
 }
 
-.scroll{
-    transform: translateX(150px);
-    opacity: 0;
-    transition: all 1.5s ease;
-}
- .active{
-    transform: translateX(0);
-    opacity: 1;
-}
 
 
 
