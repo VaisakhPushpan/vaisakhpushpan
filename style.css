@@ -3,8 +3,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
+    
 }
+html{
+    scroll-behavior: smooth;
+    }
 #rowdiv{
    display: flex;
    justify-content: space-between;
