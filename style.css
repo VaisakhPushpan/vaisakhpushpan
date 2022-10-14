@@ -44,6 +44,7 @@ html{
 }
 .nav-button{
     margin-right: 2rem;
+    transition: all 1s ease-out;
 }
 .nav-design{
     background-color: white;
@@ -61,13 +62,9 @@ html{
     align-items: center;
     justify-content: space-around;
 }
-.nav-button:hover{
-    color: blue;
-    border-radius: 5px;
-    font-size: 23px;
+.nav-button:active{
     transition: all 400ms;
-    transform: scale(1.2,1);
-    
+    transform: rotate(-45deg)    
 }
 .btn-hover:hover{
     background-color: cyan;
