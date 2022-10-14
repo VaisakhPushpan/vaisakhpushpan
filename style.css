@@ -40,7 +40,7 @@ html{
     width: 100%;
     background-color: black;
     padding-bottom:20rem;
-    b.style.transition: all 5s ease-in-out;
+    display : none;
 }
 .nav-button{
     margin-right: 2rem;
