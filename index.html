@@ -310,15 +310,21 @@ let a = document.getElementById("navvbtn");
 let b = document.getElementById("navbarNav");
 a.addEventListener("click" , () =>{
     if(b.style.display === "block"){
+        navBtn.classList.remove("fa-times");
+        navBtn.classList.add("fa-bars");
         b.style.display= "none"
     }
     else{
+        navBtn.classList.remove("fa-bars");
+        navBtn.classList.add("fa-times");
         b.style.display = "block"
     }
     });
    
 
 vimal = () =>{
+    navBtn.classList.remove("fa-times");
+    navBtn.classList.add("fa-bars");
     b.style.display = "none"
   }
 
