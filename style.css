@@ -310,6 +310,16 @@
     opacity: 1;
 }
 
+.forHeader-scroll{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+ .forHeader-active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 
 
