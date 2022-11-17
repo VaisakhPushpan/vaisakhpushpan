@@ -222,6 +222,41 @@
 }
 
 
+
+
+/* recent work section */
+
+.work-main{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    justify-content: space-around;
+}
+.work-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    box-shadow: 0 0 30px rgba(118, 66, 93, 0.5);
+    width: 100%;
+    margin-top: 15%;
+}
+.work-div:hover{
+    transform: scale(.95,.95);
+}
+.work-div a{
+    text-decoration: none;
+    color: rgba(206, 28, 120, 0.8);
+    padding: 5%;
+    text-transform: capitalize;
+}
+.work-div a:hover{
+    color: rgba(206, 28, 120, 0.8);
+}
+
+
+
 /*for fun*/
 
 
